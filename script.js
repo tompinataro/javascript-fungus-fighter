@@ -78,7 +78,7 @@ function fungusClassCondition(event) {
         enemyClasses.classList.replace("walk", "dead");
         }
     if(ourAP <= 0) {
-        enemyClasses.classList.replace("walk", "jump");
+        enemyClasses.classList.replace("walk", "jump");  
         attackBtn1.disabled = true; 
         attackBtn2.disabled = true; 
         attackBtn3.disabled = true; 
