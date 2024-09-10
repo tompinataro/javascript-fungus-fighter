@@ -65,3 +65,5 @@ ourAPScore.textContent = `${ourAP} AP`;
 fungusHPScore.textContent = `${fungusHP} HP`;
 
 }
+
+
