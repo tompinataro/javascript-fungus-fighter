@@ -1,20 +1,28 @@
-// State Variables can be declared outside of the onReady
-// Feel free to make this to what you want!
-// Example:
-// let fungusHP = 100;
+let ourAP = 150;
+let fungusHP = 150;
+let ourAPScore = document.querySelector('.ap-text');
+let fungusHPScore = document.querySelector('.hp-text'); 
+let enemyClasses = document.querySelector('.freaky-fungus');
+
 
 function onReady() {
     console.log("Ready to go!")
     
-    // Make sure you check the index.html file! 
-    // There are lots of buttons and things ready for you to hook into here!
-    
-    
-    // 🧠 Remember
-    // - Handle events that ->
-    // - Updates state which is ->
-    // - Rendered to the DOM
+    ourAPScore.textContent = `${ourAP} AP`;
+    fungusHPScore.textContent = `${fungusHP} HP`;
 }
 
-
 onReady()
+
+
+function scoreStateMinimum(event) {
+event.preventDefault();
+    if (ourAP < 0) {
+        ourAP = 0;
+        ourAPScore.textContent = `${ourAP} AP`;
+    }
+    if (fungusHP < 0) {
+        fungusHP = 0;
+        fungusHPScore.textContent = `${fungusHP} HP`;
+    }
+}
