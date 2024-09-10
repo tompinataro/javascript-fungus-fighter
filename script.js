@@ -26,3 +26,42 @@ event.preventDefault();
         fungusHPScore.textContent = `${fungusHP} HP`;
     }
 }
+function handleArcaneClick(event) {
+event.preventDefault();
+ourAP = ourAP - 12;
+fungusHP = fungusHP - 14;
+
+ourAPScore.textContent = `${ourAP} AP`;
+fungusHPScore.textContent = `${fungusHP} HP`;
+
+}
+
+function handleEntangleClick(event) {
+event.preventDefault();
+ourAP = ourAP - 23;
+fungusHP = fungusHP - 9;
+
+ourAPScore.textContent = `${ourAP} AP`;
+fungusHPScore.textContent = `${fungusHP} HP`;
+
+}
+
+function handleDragonClick(event) {
+event.preventDefault();
+ourAP = ourAP - 38;
+fungusHP = fungusHP - 47;
+
+ourAPScore.textContent = `${ourAP} AP`;
+fungusHPScore.textContent = `${fungusHP} HP`;
+
+}
+
+function handleStarClick(event) {
+event.preventDefault();
+ourAP = ourAP - 33;
+fungusHP = fungusHP - 25;
+
+ourAPScore.textContent = `${ourAP} AP`;
+fungusHPScore.textContent = `${fungusHP} HP`;
+
+}
