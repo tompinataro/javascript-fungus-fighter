@@ -67,3 +67,22 @@ fungusHPScore.textContent = `${fungusHP} HP`;
 }
 
 
+function fungusClassCondition(event) {
+    event.preventDefault();
+    let attackBtn1 = document.querySelector('.arcane-scepter');
+    let attackBtn2 = document.querySelector('.entangle');
+    let attackBtn3 = document.querySelector('.dragon-blade');
+    let attackBtn4 = document.querySelector('.star-fire');
+    
+    if(fungusHP <= 0) {
+        enemyClasses.classList.replace("walk", "dead");
+        }
+    if(ourAP <= 0) {
+        enemyClasses.classList.replace("walk", "jump");
+        attackBtn1.disabled = true; 
+        attackBtn2.disabled = true; 
+        attackBtn3.disabled = true; 
+        attackBtn4.disabled = true; 
+    
+        }
+    }
